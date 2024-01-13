@@ -8,7 +8,7 @@
 
 
     <div class="display-6 text-center mt-5 "> Studens List </div>
-    <a href="form.php" class="btn btn-sm btn-primary m-1"> Add Student </a>
+    <a href="form.php" class="btn btn-sm btn-primary m-1"> Add Booking </a>
     <table class="table m-5  table-hover table-striped  ">
         <thead>
             <tr>
@@ -16,6 +16,7 @@
                 <th> name </th>
                 <th> phone </th>
                 <th> Date</th>
+                <th></th>
             </tr>
         </thead>
         <tbody>
@@ -33,11 +34,14 @@
                     <td> <?php echo $booking['name'];?></td>
                     <td> <?php echo $booking['phone'];?></td>
                     <td> <?php echo $booking['date'];?></td>
+                    <td>
+                        <a class="btn btn-info btn-sm " href="update.php?id=<?php echo $booking['id'] ?>"> update </a>
+                        <a class="btn btn-danger btn-sm  " href="delete.php?id=<?php echo $booking['id'] ?>"> Delete </a>
+                </td>
                 </tr>
                     
                <?php } ?>
 
-        ?>
                
             
         </tbody>
