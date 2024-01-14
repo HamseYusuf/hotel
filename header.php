@@ -12,8 +12,15 @@
         <li class="nav-item">
           <a class="nav-link" href="#">Students </a>
         </li>
-     
       </ul>
+      <form action="search.php" method="get">
+          <div class="input-group">
+            <input type="text" name="query" placeholder="Search by name" class="form-control">
+          </div>
+          <div class="input-group-append">
+            <button class=" btn btn-primary btn-sm " type="submit">Search</button>
+          </div>
+        </form>
     </div>
   </div>
 </nav>
