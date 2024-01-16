@@ -1,7 +1,7 @@
 <?php
 
 $host='localhost';
-$dbname='hotel';
+$dbname='digital_lib';
 $username='root';
 $password='';
 
