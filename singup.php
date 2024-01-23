@@ -13,7 +13,7 @@
                 $stmt = $conn->prepare($sql);
                 $stmt->bindParam(":username" , $username);
                 $stmt->bindParam(":email" , $email);
-                $stmt->bindParam(":password" , password_hash($password , PASSWORD_DEFAULT));
+                $stmt->bindParam(":password" , $password);
                 $stmt->execute();
                 header("Location: login.php");
             }

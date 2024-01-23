@@ -12,6 +12,9 @@
         <li class="nav-item">
           <a class="nav-link" href="#">Students </a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="logout.php">log out  </a>
+        </li>
       </ul>
       <form action="search.php" method="get">
           <div class="input-group">
